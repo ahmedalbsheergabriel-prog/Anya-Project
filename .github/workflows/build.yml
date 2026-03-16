@@ -1,3 +1,4 @@
+cat <<EOF > ~/Anya-Project/.github/workflows/build.yml
 name: Build APK
 on: [push, pull_request]
 
@@ -19,4 +20,5 @@ jobs:
         with:
           name: anya-apk
           path: bin/*.apk
+EOF
 
